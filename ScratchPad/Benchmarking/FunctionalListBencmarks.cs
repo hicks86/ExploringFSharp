@@ -17,7 +17,7 @@ namespace Benchmarking
     [SimpleJob(RunStrategy.Monitoring)]
     [MemoryDiagnoser]
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
-    public class FunctionalBencmarks
+    public class FunctionalListBencmarks
     {
         [Params(1_000, 10_000, 100_000, 1_000_000, 10_000_000)]
         public int ListCountNumber;
